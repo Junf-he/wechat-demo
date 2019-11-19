@@ -14,6 +14,24 @@ Page({
       case 1:
         this.movetoCenter();
         break;
+      case 2:
+        if (this.timer) {
+          wx.navigateBack({
+            delta: 1
+          })
+        } else {
+          wx.scanCode({
+            success: () => {
+              wx.redirectTo({
+                url: '../scanResult/index',
+              })
+            },
+            fail: () => {
+
+            }
+          })
+        }
+        break;
     }
   },
   /**
