@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/scanResult/index",
     "pages/billing/index",
-    "pages/warn/index"
+    "pages/warn/index",
+    "pages/my/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FDD504",
