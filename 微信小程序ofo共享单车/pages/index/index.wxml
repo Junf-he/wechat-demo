@@ -1,0 +1,5 @@
+<!--pages/index/index.wxml-->
+<!-- 首页 -->
+<view class="container">
+<map latitude="{{latitude}}" longitude="{{longitude}}" id="ofo-map" scale="16" show-location controls="{{controls}}" bindcontroltap="bindcontroltap" />
+</view>

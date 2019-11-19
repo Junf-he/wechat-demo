@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/charge/index",
+    "pages/wallet/index",
+    "pages/my/index",
+    "pages/warn/index",
+    "pages/billing/index",
+    "pages/scanResult/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FDD504",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "ofo共享单车",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "是否允许ofo获取你的当前位置?"
+    }
+  },
+  "sitemapLocation": "sitemap55.json"
+}
