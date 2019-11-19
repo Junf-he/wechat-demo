@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/scanResult/index"
+    "pages/scanResult/index",
+    "pages/billing/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FDD504",
