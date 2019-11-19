@@ -32,6 +32,11 @@ Page({
           })
         }
         break;
+      case 3:
+        wx.navigateTo({
+          url: '../warn/index',
+        })
+        break;
     }
   },
   /**
