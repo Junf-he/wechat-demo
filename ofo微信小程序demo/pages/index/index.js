@@ -1,23 +1,28 @@
-// pages/wallet/index.js
+// pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    money:10,
-    ticket:10
+    latitude:"31.23",
+    longitude:"121.47",
+    controls:[]
   },
-  movetoCharge:function(){
-    wx.redirectTo({
-      url: '../charge/index',
-    })
-  },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.timer=options.timer;
+    wx.getLocation({//获取经纬度
+      success:(res) =>{
+        this.setData({
+          latitude:res.latitude,
+          longitude:res.longitude
+        })
+      },
+    })
   },
 
   /**
@@ -31,9 +36,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.mapctx=wx.createMapContext("ofo-map", this);
+    this.movetoCenter();
   },
 
+  movetoCenter:function(){
+    this.mapctx.moveToLocation();
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */
