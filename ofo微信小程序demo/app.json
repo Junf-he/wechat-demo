@@ -4,7 +4,9 @@
     "pages/scanResult/index",
     "pages/billing/index",
     "pages/warn/index",
-    "pages/my/index"
+    "pages/my/index",
+    "pages/wallet/index",
+    "pages/charge/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FDD504",
